@@ -56,17 +56,17 @@
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  background-color: #e02323;
+  background-color: red;
   color: #fff;
 }
 
 .nav-links a:hover {
-  color: #e02323;
+  color: red;
 }
 .nav-links button:hover {
-  color: #e02323;
+  color: red;
   background-color: #fff;
-  border: 2px solid #e02323;
+  border: 2px solid red;
 }
 
 /* Hamburger Button for Mobile */
@@ -75,7 +75,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: #e02323;
+  color: red;
   font-size: 30px;
 }
 

@@ -1,0 +1,213 @@
+/* ----- WRAPPER DESIGN ----- */
+.wrapper {
+  /* position: relative; */
+  padding-inline: 10vw;
+}
+/* ----- FEATURED BOX ----- */
+.featured-box {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  min-height: 700px;
+  flex-direction: row; /* Default to row layout */
+}
+/* ----- FEATURED TEXT BOX ----- */
+.featured-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 20px;
+}
+.featured-text-card span {
+  background: red;
+  color: rgb(255, 255, 255);
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.featured-name {
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(68, 68, 68);
+  margin-block: 20px;
+}
+.typedText {
+  text-transform: capitalize;
+  color: red;
+}
+.featured-text-info {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: rgb(68, 68, 68);
+}
+.featured-text-btn {
+  display: flex;
+  gap: 20px;
+}
+.featured-text-btn > .hire-btn {
+  width: 10rem;
+  height: 3rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: #fff;
+  color: red;
+  font-size: 18px;
+  box-shadow: 0 3px 8px red;
+}
+
+.featured-text-btn > .download-btn {
+  width: 10rem;
+  height: 3rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: #fff;
+  color: green;
+  font-size: 18px;
+  box-shadow: 0 3px 8px green;
+}
+
+.featured-text-btn > .hire-btn:hover {
+  background: red;
+  color: #fff;
+  box-shadow: 0 3px 8px #ffffff;
+}
+
+.featured-text-btn > .download-btn:hover {
+  background: green;
+  color: #fff;
+  box-shadow: 0 3px 8px #ffffff;
+}
+.social_icons {
+  display: flex;
+  margin-top: 5em;
+  gap: 30px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+.icon:hover {
+  color: red;
+  transform: translateY(-5px);
+}
+
+/* ----- FEATURED IMAGE BOX ----- */
+.featured-image {
+  display: flex;
+  justify-content: right;
+  align-content: center;
+  min-height: 80vh;
+  width: 50%;
+}
+.image {
+  margin: 8.5rem 0;
+  max-height: 500px;
+  width: 27rem;
+  height: 80rem;
+  border-radius: 55% 45% 55% 45%;
+  overflow: hidden;
+  /* border: 3px solid red; */
+  box-shadow: 0 4px 8px blue;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center -10%;
+}
+
+/* ----- Responsive Layout for Mobile ----- */
+@media (max-width: 768px) {
+  .featured-box {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center;
+    height: auto;
+    min-height: unset;
+  }
+
+  /* Place Featured Text at the top on mobile */
+  .featured-text {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    order: 1; /* Move .featured-text to the top */
+  }
+
+  .featured-text-card span {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  .featured-name {
+    font-size: 36px;
+    margin-block: 15px;
+  }
+
+  .featured-text-info {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .featured-text-btn {
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .featured-text-btn > .hire-btn,
+  .featured-text-btn > .download-btn {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  /* Adjust Featured Image */
+  .featured-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem; /* Add spacing between text and image */
+  }
+
+  /* Adjust Image size on mobile */
+  .image {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    margin: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10%; /* Make the image circular on mobile */
+    box-shadow: 0 4px 8px blue;
+  }
+
+  /* Social Icons */
+  .social_icons {
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Adjust Scroll Button on Mobile */
+.scroll-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
