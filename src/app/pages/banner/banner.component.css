@@ -120,9 +120,7 @@
   height: 80rem;
   border-radius: 55% 45% 55% 45%;
   overflow: hidden;
-  /* border: 3px solid red; */
   box-shadow: inset 2px 5px 8px #000;
-  /* box-shadow: 0 8px 50px blueviolet; */
 }
 
 .image img {
@@ -141,12 +139,11 @@
     min-height: unset;
   }
 
-  /* Place Featured Text at the top on mobile */
   .featured-text {
     width: 100%;
     text-align: center;
     padding: 0 20px;
-    order: 1; /* Move .featured-text to the top */
+    order: 1;
   }
 
   .featured-text-card span {
@@ -205,12 +202,4 @@
     width: 35px;
     height: 35px;
   }
-}
-
-/* Adjust Scroll Button on Mobile */
-.scroll-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
 }
