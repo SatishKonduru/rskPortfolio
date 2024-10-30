@@ -1,0 +1,42 @@
+.container {
+  padding-inline: 10vw;
+  height: 90vh;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+.profile-header {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.profile-header span {
+  font-size: 30px;
+  color: #fff;
+  background: rgba(255, 0, 0, 0.9);
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.1rem;
+  box-shadow: 0 2px 4px #000;
+}
+
+.profile-description {
+  line-height: 2rem;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px #000;
+}
+.skill-set {
+  display: flex;
+  justify-content: space-around; /* Center the skills */
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the items */
+}
