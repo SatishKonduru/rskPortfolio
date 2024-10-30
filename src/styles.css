@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@fontsource/poppins/index.css";
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right, #dfdcdc, #cdcdcd);
+}
