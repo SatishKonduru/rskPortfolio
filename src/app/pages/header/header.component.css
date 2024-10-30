@@ -80,6 +80,17 @@
   font-size: 30px;
 }
 
+.personalInfo {
+  top: 20%;
+  left: 20%;
+  height: 300px;
+  width: 900px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #000;
+  padding: 20px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   /* Hide nav links and show hamburger */
