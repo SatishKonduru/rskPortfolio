@@ -24,6 +24,7 @@ export class BannerComponent implements OnInit {
       backSpeed: 30,
       backDelay: 1000,
       loop: true,
+      // cursorChar: '_',
     };
 
     const typed = new Typed('.typedText', options);
