@@ -40,3 +40,89 @@
   flex-direction: column;
   align-items: center; /* Center align the items */
 }
+
+.skill:hover {
+  animation: scaleUp 0.2s forwards; /* Scale up on hover */
+  cursor: pointer;
+}
+
+.skill {
+  animation: scaleDown 0.2s forwards; /* Scale down initially */
+}
+
+/* Keyframes for scaling down the skill circles */
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+/* Keyframes for scaling up the skill circles */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    padding-inline: 5vw; /* Reduce padding on larger screens */
+  }
+
+  .profile-header span {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .profile-description {
+    font-size: 0.9rem; /* Smaller font size for description */
+    line-height: 1.5rem; /* Reduce line height */
+  }
+
+  .skill-set {
+    flex-direction: column; /* Stack skills vertically */
+    align-items: center; /* Center align skills */
+  }
+
+  .skill {
+    margin-bottom: 2rem; /* Add space between skills */
+  }
+}
+@media (max-width: 768px) {
+  .profile-header span {
+    font-size: 20px; /* Smaller font size for smaller screens */
+  }
+
+  .profile-description {
+    font-size: 0.8rem; /* Further reduce font size */
+  }
+
+  .skill-set {
+    flex-direction: column; /* Stack skills vertically */
+  }
+
+  .skill {
+    width: 80%; /* Limit skill width */
+    animation: scaleDown 0.2s forwards; /* Apply scale down animation */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-header span {
+    font-size: 18px; /* Even smaller font size */
+  }
+
+  .profile-description {
+    font-size: 0.7rem; /* Smaller font size for mobile */
+  }
+
+  .skill {
+    animation: scaleUp 0.2s forwards; /* Scale up on mobile */
+  }
+}
