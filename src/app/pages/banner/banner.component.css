@@ -1,6 +1,5 @@
 /* ----- WRAPPER DESIGN ----- */
 .wrapper {
-  /* position: relative; */
   padding-inline: 10vw;
 }
 /* ----- FEATURED BOX ----- */
@@ -9,7 +8,7 @@
   display: flex;
   height: 100vh;
   min-height: 700px;
-  flex-direction: row; /* Default to row layout */
+  flex-direction: row;
 }
 /* ----- FEATURED TEXT BOX ----- */
 .featured-text {
@@ -32,7 +31,8 @@
 .featured-name {
   font-size: 50px;
   font-weight: 600;
-  color: rgb(68, 68, 68);
+  /* color: #444; */
+  color: blueviolet;
   margin-block: 20px;
 }
 .typedText {
@@ -43,7 +43,7 @@
 .featured-text-info {
   font-size: 15px;
   margin-bottom: 30px;
-  color: rgb(68, 68, 68);
+  color: #444;
 }
 .featured-text-btn {
   display: flex;
